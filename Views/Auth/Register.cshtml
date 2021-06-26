@@ -1,0 +1,20 @@
+﻿@model UserViewModel
+<form method="post">
+    @Html.TextBoxFor(x => x.Email, new { placeholder = "Email giriniz" })
+    <br />
+    <br />
+    @Html.TextBoxFor(x => x.UserName, new { placeholder = "Kullanıcı adı giriniz" })
+    <br />
+    <br />
+    @Html.TextBoxFor(x => x.FirstName, new { placeholder = "Adınızı giriniz" })
+    <br />
+    <br />
+    @Html.TextBoxFor(x => x.TC, new { placeholder = "TC No giriniz" })
+    <br />
+    <br />
+    @Html.PasswordFor(x => x.Password, new { placeholder = "Şifre giriniz" })
+    <br />
+    <br />
+    <input type="submit" value="Kaydet" class="btn btn-success" />
+</form>
+
